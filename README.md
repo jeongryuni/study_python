@@ -638,9 +638,9 @@
     raise 발생오류
 
 예외 만들기
-    class 오류명(Exception):
-        def __str__(self):
-            return '오류 메세지'
+        class 오류명(Exception):
+            def __str__(self):
+                return '오류 메세지'
 
 ***
 
