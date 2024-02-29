@@ -33,7 +33,6 @@ def take_guess():
                 print('숫자만 입력해주세요')
     return new_guess
 
-
 # 테스트 코드
 # print(take_guess())
 

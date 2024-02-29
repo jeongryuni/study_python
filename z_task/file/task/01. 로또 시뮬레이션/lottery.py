@@ -19,7 +19,6 @@ def draw_winning_numbers():
 
     return sorted_winning_numbers + [bonus_number]
 
-
 # print(draw_winning_numbers())
 
 # 로또 시뮬레이션 프로그램: 겹치는 번호 개수
