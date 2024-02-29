@@ -1,6 +1,6 @@
 import random
 
-
+# 로또 시뮬레이션 프로그램: 번호뽑기
 def generate_numbers(n):
     winner_numbers =[]
     while len(winner_numbers) < n:
@@ -9,6 +9,7 @@ def generate_numbers(n):
             winner_numbers.append(rand_num)
     return winner_numbers
 
+# 로또 시뮬레이션 프로그램: 겹치는 번호 카운트
 def draw_winning_numbers():
     winning_numbers = generate_numbers(7)
     print(winning_numbers)
@@ -33,6 +34,7 @@ def count_matching_numbers(numbers, winning_numbers):
 # print(count_matching_numbers([2, 7, 11, 14, 25, 40], [2, 11, 13, 14, 30, 35]))
 # print(count_matching_numbers([2, 7, 11, 14, 25, 40], [14]))
 
+# 로또 시뮬레이션 프로그램: 당첨 금액 확인
 def check(numbers, winning_numbers):
     check_num = count_matching_numbers(numbers, winning_numbers[:6])
     bonus_match = False
